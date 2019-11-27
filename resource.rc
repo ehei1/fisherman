@@ -1,0 +1,260 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "게임(&G)"
+    BEGIN
+        MENUITEM "새 게임(&N)           F2",    ID_NEW_GAME
+        MENUITEM SEPARATOR
+        MENUITEM "초급(&B)",                    ID_BASIC, CHECKED
+        MENUITEM "중급(&I)",                    ID_INTERMEDIATE
+        MENUITEM "고급(&E)",                    ID_EXPERT
+        MENUITEM "사용자 지정(&C)...",          ID_CUSTOM
+        MENUITEM SEPARATOR
+        MENUITEM "? 표시 안함(&M)",             ID_MARK
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                  ID_QUIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "생선찾기 정보(&A)...",        ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "Icon #1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM DIALOGEX 0, 0, 164, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "사용자 지정 필드"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,98,17,50,14
+    PUSHBUTTON      "취소",IDCANCEL,98,40,50,14
+    LTEXT           "높이(&H):",IDC_STATIC,7,18,31,8
+    LTEXT           "너비(&W):",IDC_STATIC,7,31,39,11
+    LTEXT           "지뢰(&M):",IDC_STATIC,7,43,36,17
+    EDITTEXT        IDC_HEIGHT,45,17,27,12,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_WIDTH,45,30,27,12,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_MINE,45,42,27,12,ES_AUTOHSCROLL,WS_EX_RIGHT
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 261, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "정보"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "닫기(&C)",IDOK,7,162,247,14
+    LTEXT           "공부삼아 만든 생선찾기 1.01",IDC_STATIC,83,74,102,8
+    LTEXT           "서울산업대 컴퓨터공학과",IDC_STATIC,7,94,91,8
+    LTEXT           "2005-10-31",IDC_STATIC,216,95,38,8
+    LTEXT           "이웅주 ehei1@hanmail.net 프로그램",IDC_STATIC,7,108,122,
+                    8
+    LTEXT           "이동훈 soundpack@intizen.com 테스트",IDC_STATIC,7,118,
+                    130,8
+    LTEXT           "그림 출처: http://www.iconarchive.com",IDC_STATIC,123,
+                    151,131,8
+    LTEXT           "이언영 teary-ey@hanmail.net 사운드",IDC_STATIC,7,128,
+                    125,8
+    LTEXT           "이민호 dickies00@hanmail.net 그래픽",IDC_STATIC,7,138,
+                    126,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CUSTOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SMILE               BITMAP                  "image/smile.bmp"
+IDB_DIGIT9              BITMAP                  "image/digit9.bmp"
+IDB_DIGIT1              BITMAP                  "image/digit1.bmp"
+IDB_DIGIT2              BITMAP                  "image/digit2.bmp"
+IDB_DIGIT3              BITMAP                  "image/digit3.bmp"
+IDB_DIGIT4              BITMAP                  "image/digit4.bmp"
+IDB_DIGIT5              BITMAP                  "image/digit5.bmp"
+IDB_DIGIT6              BITMAP                  "image/digit6.bmp"
+IDB_DIGIT7              BITMAP                  "image/digit7.bmp"
+IDB_DIGIT8              BITMAP                  "image/digit8.bmp"
+IDB_DIGIT0              BITMAP                  "image/digit0.bmp"
+IDB_TILE                BITMAP                  "image/tile.bmp"
+IDB_TILE_FLAG           BITMAP                  "image/tile_flag.bmp"
+IDB_TILE_RESERVED       BITMAP                  "image/tile_reserved.bmp"
+IDB_TILE_WRONG          BITMAP                  "image/mine_wrong.bmp"
+IDB_TILE_EXPLODED       BITMAP                  "image/mine_exploded.bmp"
+IDB_TILE_MINE           BITMAP                  "image/mine.bmp"
+IDB_TILE_0              BITMAP                  "image/mine_0.bmp"
+IDB_TILE_1              BITMAP                  "image/mine_1.bmp"
+IDB_TILE_2              BITMAP                  "image/mine_2.bmp"
+IDB_TILE_3              BITMAP                  "image/mine_3.bmp"
+IDB_TILE_4              BITMAP                  "image/mine_4.bmp"
+IDB_TILE_5              BITMAP                  "image/mine_5.bmp"
+IDB_TILE_6              BITMAP                  "image/mine_6.bmp"
+IDB_TILE_7              BITMAP                  "image/mine_7.bmp"
+IDB_TILE_8              BITMAP                  "image/mine_8.bmp"
+IDB_SMILE_DOWN          BITMAP                  "image/smile_down.bmp"
+IDB_SMILE_DEAD          BITMAP                  "image/smile_dead.bmp"
+IDB_SMILE_CLICK         BITMAP                  "image/smile_click.bmp"
+IDB_MINUS               BITMAP                  "image/bitmap1.bmp"
+IDB_SMILE_PASS          BITMAP                  "image/bmp00001.bmp"
+IDB_LOGO                BITMAP                  "image/bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+40040                   WAVE                    "image/nice_effect.wav"
+40041                   WAVE                    "image/explosion.wav"
+40042                   WAVE                    "image/whistle.wav"
+40043                   WAVE                    "image/beep_1.wav"
+40044                   WAVE                    "image/slap_2.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "rebuild of Windows Mine Sweeper"
+            VALUE "CompanyName", "Femto Team"
+            VALUE "FileDescription", "windows mini game"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "resource"
+            VALUE "LegalCopyright", "Copyright (c) - 2005"
+            VALUE "OriginalFilename", "fisherman"
+            VALUE "ProductName", "fisherman"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

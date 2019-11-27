@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fisherman", "fisherman.vcproj", "{DA17D758-A270-46B3-8DC3-B25873710A1B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DA17D758-A270-46B3-8DC3-B25873710A1B}.Debug.ActiveCfg = Debug|Win32
+		{DA17D758-A270-46B3-8DC3-B25873710A1B}.Debug.Build.0 = Debug|Win32
+		{DA17D758-A270-46B3-8DC3-B25873710A1B}.Release.ActiveCfg = Release|Win32
+		{DA17D758-A270-46B3-8DC3-B25873710A1B}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
